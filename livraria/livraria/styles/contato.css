@@ -1,0 +1,36 @@
+/* Parte 4 */
+
+.contato {  /*define os estilos para a classe contato*/
+    background-color: var(--branco);  /*define a cor do fundo desta classe*/
+    padding: 1em;  /*define o espaçamento dentro desta classe*/
+}
+
+.contato__titulo,
+.contato__texto {  /* define estilos que serao usados tento para o titulo quanto para o texto dentro da classe contato*/
+    background: var(--azul-degrade);  /*define a cor de fundo desta classe*/
+    -webkit-background-clip: text;  /* Utilidade para fazer funcionar em todos os navegadores*/
+    -webkit-text-fill-color: transparent;   /* Utilidade para fazer funcionar em todos os navegadores*/
+    background-clip: text;  /* pega a cor de fundo e aplica ela ao texto */
+}
+.contato__titulo {  /*define os estilos do titulo dentro da classe contato*/
+    font-size: 18px;  /*define o temanho da fonte*/
+    font-weight: 500;  /*definição do destacamento da fonte*/
+}
+
+.contato__texto {  /*define os estilos do texto dentro da classe contato*/
+    font-weight: 300;  /*definição do destacamento da fonte*/
+    margin: 1em 0;  /* define a margem da classe*/
+}
+.contato__email {  /*define as opções de estilo da caixa onde pede para colocar seu e-mail*/
+    padding: 1em;  /*define o espaçamento dentro desta classe*/ 
+    border: 1px solid var(--azul);  /*cria as bordas envolta da parte de adicionar o seu e-mail e define que ela sera uma linha continua e a cor dela*/
+    border-radius: 24px;  /*define o tamanho das bordas acima*/
+    width: 90%;  /* define a lagura que os itens desta classe irão ocupar dentro da pagina*/
+    color: var(--azul);  /* define a cor do texto*/
+}
+.contato__email::placeholder {  /*define os estilos para o texto temporario da caixa onde pede para colocar seu e-mail*/
+    font-family: var(--fonte-principal);  /*definição da fonte de texto que sera utilizada*/
+    color: var(--azul);  /*define a cor do texto desta classe*/
+    background: url("../img/Email.svg") no-repeat;  /*coloca a imagem da carta na barra de e-mail*/
+    padding-left: 2em;  /*define o espaçamento dentro desta classe*/
+}

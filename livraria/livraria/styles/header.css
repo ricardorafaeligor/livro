@@ -1,0 +1,54 @@
+/*Parte 1*/
+
+.cabecalho__menu-hamburger{  /*define os estilos da classe cabecalho__menu-hamburger*/
+    width: 24px;  /*define a largura dos itens dentro desta classe*/
+    height: 24px;  /*define a altura dos itens dentro desta classe*/
+    background-image: url("../img/Menu.svg");  /*utiliza esta imagem como o fundo do container desta classe*/
+    background-repeat: no-repeat;  /*faz com que nãop haja repetições dos itens na classe na tela*/
+    background-position: center;  /*centraliza a posição do fundo*/
+    display: inline-block;  /*faz com que os itens fiquem alinhados em linha*/
+
+}
+.cabecalho{  /*define os estilos da classe cabecalho*/
+    background-color: var(--branco);  /*define a cor do fundo desta classe*/
+    display: flex; /*faz com que os itens dentro desta classe fiquem em linha*/
+    justify-content: space-between;  /* faz com que os elementos do menu fiquem separados um em cada canto*/
+    align-items: center;  /*alinha os itens dentro da classe*/
+    position: relative;  /*define o estilo de posicionamento e altera como e onde o menu ira aparecer uma vez que ele seja clicado*/
+}
+.container{  /*define os estilos da classe container*/
+    display: flex;  /*faz com que os itens dentro desta classe fiquem em linha*/
+    align-items: center;  /*alinha os itens dentro da classe*/
+
+}
+.container__imagem{  /*define os estilos da classe container__imagem*/
+    padding: 1em;  /*define o espaçamento dentro desta classe*/
+}
+.lista-menu{  /*define os estilos da classe lista__menu*/
+    display: none;  /*esconde o elemento visual desta classe*/
+    position: absolute;  /*define o estilo de posicionamento e altera como e onde o menu ira aparecer uma vez que ele seja clicado fazendo com que ele apareça em uma posição relativa ao botao de menu*/
+    top: 100%;  /*define a distancia do elemento com relação a margem e ao elemento acima*/
+    width: 60vw;  /*define a largura do elemento*/
+}
+.container__botao:checked~.lista-menu{  /*define os estilos da classe container__botao quando ela esta sendo pressionada pelo mouse*/
+    display: block;  /*coloca os itens em formato de bloco*/
+}
+.lista-menu__titulo, .lista-menu__item{  /*define os estilos das classes lista-menu__titulo e lista-menu__item */
+    padding: 1em;  /*define o espaçamento dos itens desta classe*/
+    background-color: var(--branco);  /*define a cor de fundo desta classe*/
+}
+.lista-menu__titulo{  /*define os estilos da classe lista-menu__titulo*/
+    color: var(--laranja);  /*define a cor do texto desta classe*/
+    font-weight: 700;  /*define o destaque da fonte desta classe*/
+}
+.lista-menu__link{  /*define os estilos da classe lista-menu__link */
+    background: var(--azul-degrade);  /*define a cor de fundo desta classe*/
+    -webkit-background-clip: text;  /*utilizado para poder funcionar em diversos navegadores*/
+    -webkit-text-fill-color: transparent;  /*utilizado para poder funcionar em diversos navegadores*/
+    background-clip: text;  /*define a cor do texto como a cor de fundo definida acima*/
+    text-transform: uppercase;  /*faz com o texto desta classe seja convertido em letras maiusculas*/
+
+}
+.container__botao{  /*define os estilos da classe .container__botao  */
+    display: none;  /*esconde o elemento visual desta classe*/
+}

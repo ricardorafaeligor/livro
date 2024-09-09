@@ -1,0 +1,215 @@
+<!-- inicio da Pagina ---------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html>
+<!-- Parte 1 ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<head> <!-- configurações da pagina-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Alura Books</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!--Adiciona a fonte Poppins - Google Fonts-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body> <!-- inicio do corpo da pagina-->
+    <header class="cabecalho"> <!-- inicio Cabeçalho-->
+        <div class="container"><!--Botão de Menu em barras -->
+            <input type="checkbox" id="menu" class="container__botao"><!--cria o botao do menu - definindo como uma lista de checagem - assim que ela e clicada os seus itens aparecem -->
+            <label for="menu"> <!-- coloca a imagem de 3 barrinhas na lista "input" acima-->
+                <span class="cabecalho__menu-hamburger container__imagem"></span> 
+            </label>
+            <ul class="lista-menu"> <!-- Lista com os itens do menu-->
+                <li class="lista-menu__titulo">Categorias</li> <!-- 1º item do menu - serve como o titulo dentro dele em laranja--> 
+                <li class="lista-menu__item"> <!-- 2º item do menu --> 
+                    <a href="#" class="lista-menu__link">comédia</a> <!-- Link para a opção(item) do menu-->
+                </li>
+                <li class="lista-menu__item"> <!-- 3º item do menu --> 
+                    <a href="#" class="lista-menu__link">romance</a> <!-- Link para a opção(item) do menu-->
+                </li>
+                <li class="lista-menu__item"> <!-- 4º item do menu --> 
+                    <a href="#" class="lista-menu__link">terror</a> <!-- Link para a opção(item) do menu-->
+                </li>
+                <li class="lista-menu__item"> <!-- 5º item do menu --> 
+                    <a href="#" class="lista-menu__link">contos</a> <!-- Link para a opção(item) do menu-->
+                </li>
+                <li class="lista-menu__item"> <!-- 6º item do menu --> 
+                    <a href="#" class="lista-menu__link">Design & UX</a> <!-- Link para a opção(item) do menu-->
+                </li>
+            </ul><!-- fim d alista do menu-->
+            <img src="img/Logo.svg" alt="logo da alurabooks" class="container__imagem">
+        </div><!--Fim do menu-->
+        <div class="container"><!--container para as outras opções do cabeçalho-->
+            <a href="#"><img src="img/Favoritos-1.svg" alt="meus favoritos" class="container__imagem"></a> <!--Imagem e link para os favoritos-->
+            <a href="#"><img src="img/Compras.svg" alt="carrinho de compras" class="container__imagem"></a><!--Imagem e link para o carrinho de compras-->
+            <a href="#"><img src="img/Usuário.svg" alt="usuario" class="container__imagem"></a><!--Imagem e link para o login do usuario-->
+        </div>
+
+    </header> <!--Fim do cabeçalho-->
+
+    <section class="banner"><!--Textos logo abaixo do cabeçalho e barra de pesquisa-->
+        <h2 class="titulo__banner">Já sabe onde achar seu livro ideal?</h2>
+        <p class="banner__texto">Encontre em nossa estante o que precisa para seu divertimento ou solidão!</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?"><!-- Barra de Pesquisa - placeholder = Coloca o texto temporario dentro da barra-->
+    </section>
+<!-- Fim da Parte 1 ---------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!-- Parte 2 ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <section class="carrossel"> <!-- 1° Carrosel de itens-->
+        <h2 class="carrossel__titulo"></h2> 
+        <div class="swiper"> <!-- Container principal de deslizo do carrosel-->
+            <div class="swiper-pagination"></div> <!-- paginação do carrosel -->
+            <div class="swiper-wrapper"> <!-- Encapsulamento Adicional entorno de cada item do carrosel -->
+                <!-- Slides -->
+                <div class="swiper-slide"> <!-- 1° Slide do carrossel-->
+                    <img src="img/ApacheKafta (1).png" alt="Livro sobre apache kafka e spring boot da alura books"> <!-- Imagem do livro do Slide-->
+                </div>
+                <div class="swiper-slide"> <!-- 2° Slide do carrossel-->
+                    <img src="img/culpa (1).png" alt="Livro sobre liderança em design design da alura books"> <!-- Imagem do livro do Slide-->
+                </div>
+                <div class="swiper-slide"> <!-- 3° Slide do carrossel-->
+                    <img src="img/jane.jpg" alt="Livro sobre javascript assertivo da alura books"> <!-- Imagem do livro do Slide-->
+                </div>
+                <div class="swiper-slide"> <!-- 4° Slide do carrossel-->
+                    <img src="img/iluminado (1).png" alt="Livro Guia front end"> <!-- Imagem do livro do Slide-->
+                </div>
+                <div class="swiper-slide"> <!-- 5° Slide do carrossel-->
+                    <img src="img/orgulho (1).png" alt="Livro sobre portugol"> <!-- Imagem do livro do Slide-->
+                </div>
+                <div class="swiper-slide"> <!-- 6° Slide do carrossel-->
+                    <img src="img/dracula (1).png" alt="livro sobre acessibilidade"> <!-- Imagem do livro do Slide-->
+                </div>
+            </div>
+            <!-- Caso seja necessario usar os botoes de navegação do carrosel -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="card"> <!--Cartao logo abaixo do carrosel de itens-->
+            <!-- 1º linha -->
+            <div class="card__descrição">
+                <!-- 1º coluna da 1ª linha-->
+                <div class="descrição">
+                    <img src="img/Estrelinhas.png" alt="Avaliação 5 estrelas"> <!--coloca a imagem das estrelinhas no primeiro cartao da pagina-->
+                    <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+                    <h2 class="descrição__titulo-livro">assombração da casa da colina</h2>
+                    <p class="descrição__texto"></p>
+                </div>
+                <!-- 2º coluna da 1ª linha -->
+                <img src="img/memórias.png" class="descrição__imagem"> <!--coloca a imagem do livro angular no primeiro cartao da pagina-->
+            </div>
+            <!-- 2º linha -->
+            <div class="card__botões">
+                <!-- 1º coluna da 2º linha-->
+                <ul class="botões">
+                    <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li> <!--coloca a imagem do icone d efavoritar no primeiro cartao da pagina-->
+                    <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li> <!--coloca a imagem do icone do carrinho de compras no primeiro cartao da pagina-->
+                </ul>
+                <!-- 2º coluna da 2ª linha-->
+                <a href="#" class="botões__ancora">Saiba mais</a> 
+            </div>
+        </div>
+
+    </section><!--Fim do Carrosel-->
+<!-- Fim da Parte 2 ---------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+
+
+<!-- Parte 3 ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <section class=”carrossel”> <!-- 2° Carrosel de itens-->
+        <h2 class="carrossel__titulo">Mais vendidos</h2>
+        <div class="swiper"> <!-- Container principal de deslizo do carrosel-->
+            <div class="swiper-pagination"></div> <!-- paginação do carrosel-->
+            <div class="swiper-wrapper"> <!-- Encapsulamento Adicional entorno de cada item do carrosel -->
+                <!-- Slides -->
+                <div class="swiper-slide"> <!-- 1° Slide do carrossel-->
+                    <img src="img/ApacheKafta (1).png" alt="Livro sobre apache kafka e spring boot da alura books"> <!-- Imagem do livro do Slide-->
+                </div>
+                <div class="swiper-slide"> <!-- 2° Slide do carrossel-->
+                    <img src="img/culpa (1).png" alt="Livro sobre liderança em design da alura books"> <!-- Imagem do livro do Slide-->
+                </div>
+                <div class="swiper-slide"> <!-- 3° Slide do carrossel-->
+                    <img src="img/jane.jpg" alt="Livro sobre javascript assertivo da alurabooks"> <!-- Imagem do livro do Slide-->
+                </div>
+                <div class="swiper-slide"> <!-- 4° Slide do carrossel-->
+                    <img src="img/iluminado (1).png" alt="Livro Guia front end"> <!-- Imagem do livro do Slide-->
+                </div> 
+                <div class="swiper-slide"> <!-- 5° Slide do carrossel-->
+                    <img src="img/orgulho (1).png" alt="Livro sobre portugol"> <!-- Imagem do livro do Slide-->
+                </div>
+                <div class="swiper-slide"> <!-- 6° Slide do carrossel-->
+                    <img src="img/dracula (1).png" alt="livro sobre acessibilidade"> <!-- Imagem do livro do Slide-->
+                </div>
+            </div>
+
+            <!-- Caso seja necessario usar os botoes de navegação do carrosel -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="card">
+            <!-- 1º linha -->
+            <div class="card__descrição">
+                <!-- 1º coluna -->
+                <div class="descrição">
+                    <img src="img/Estrelinhas.png" alt="Avaliação 5 estrelas"> <!--coloca a imagem das estrelinhas no segundo cartao da pagina-->
+                    <h3 class="descrição__titulo">Autor do Mês</h3>
+                    <h2 class="descrição__titulo-livro">Jorge Amado </h2>
+                    <p class="descrição__texto">jorge Amado é famoso por suas descrições vibrantes da vida na Bahia e pela representação dos conflitos sociais e culturais do Brasil. Seus romances misturam realismo e folclore.
+                    </p>
+                </div>
+                <!-- 2º coluna -->
+                <img src="img/velhobroxa.png" class="descrição__imagem"> <!-- coloca a imagem da escritora no segundo cartao da pagina-->
+            </div>
+
+            <!-- 2º linha -->
+            <div class="card__botões">
+                <!-- 1º coluna -->
+                <ul class="botões">
+                    <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li> <!-- coloca a imagem do icone de favoritar no segundo cartao da pagina-->
+                    <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li> <!-- coloca a imagem do carrinho de compras no segundo cartao da pagina-->
+                </ul>
+                <!-- 2º coluna -->
+                <a href="#" class="botões__ancora">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+<!-- Fim da Parte 3 ---------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+    <section class="contato"> <!--Parte do contato da pagina-->
+        <h2 class="contato__titulo">Fique por dentro dos novos livros!</h2>
+        <p class="contato__texto">Atualizações de e-books, novos livros.</p>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email"> <!--Coloca a barra onde pede para digitar seu e-mail e coloca o texto dentro dela-->
+    </section> <!--fim da Parte do contato da pagina-->
+    
+    <hr />
+
+    <footer class="rodapé"> <!--Rodape da pagina-->
+        <h2 class="rodapé__titulo">Grupo Ricardo & Rafael & Igor</h2>
+    </footer> <!--fim do Rodape da pagina-->
+
+
+<!-- Fim da Parte 4 ---------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--Origem e lincagem dos Recursos do JavaScript-->
+    <script>    //Recursos do Javascript
+        const swiper = new Swiper(".swiper", {
+            spaceBetween: 10,  //espaço entre os itens do carrosel
+            slidesPerView: 3,  //quantos itens serão mostrados 
+            pagination: {
+                el: ".swiper-pagination",
+                type: "bullets",
+            },
+        });
+    </script>
+</body>
+
+</html>
+<!-- Fim da Pagina ---------------------------------------------------------------------------------------------------------------------------------------------------------->

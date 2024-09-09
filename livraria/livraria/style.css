@@ -1,0 +1,25 @@
+/*Parte 1*/
+
+@import url("styles/header.css");  /*importação dos estilos do cabeçalho*/
+@import url("styles/banner.css");  /*importação dos estilos do banner*/
+@import url("styles/carrossel.css");  /*importação dos estilos do carrosel*/
+@import url("styles/topicos.css");  /*importação dos estilos do topicos*/
+@import url("styles/contato.css");  /*importação dos estilos do contato*/
+@import url("styles/rodape.css");  /*importação dos estilos do rodape*/
+
+
+:root{   /*definição das variaveis que serao utilizadas nos estilos*/
+    --branco:#ffffff;  /*definição da cor da variavel --braco que e usada nos diversas partes de estilos do css*/
+    --cor-de-fundo:#ffee00;  /*definição da cor da variavel --cor-de-fundo que e usada nos diversas partes de estilos do css*/
+    --laranja: #eb9b00;  /*definição da cor da variavel --laranja que e usada nos diversas partes de estilos do css*/
+    --azul-degrade:linear-gradient(97.54deg, #f57600 35.49%, #f57600 165.37%);  /*definição da cor e do gradiente utilizado na variavel --azul-degrade que e usada nos diversas partes de estilos do css*/
+    --fonte-principal: "Poppins";  /*definição da fonte utilizada na variavel --fonte-principal que e usada nos diversas partes de estilos do css*/
+    --azul: #002F52;  /*definição da cor da variavel --azul que e usada nos diversas partes de estilos do css*/
+}
+body{  /*definição de estilos gerais da pagina*/
+    background-color: var(--cor-de-fundo);  /*definição de cor de fundo*/
+    font-family: var(--fonte-principal);  /*definição da fonte de texto que sera utilizada*/
+    font-size: 16px;  /*tamanha da fonte*/
+    font-weight: 400;  /*definição do destacamento da fonte*/
+    
+}

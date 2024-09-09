@@ -1,0 +1,35 @@
+/*Parte 1*/
+
+.banner{  /*define estilos para a classe banner*/
+    background: var(--azul-degrade);  /*define a cor de fundo da classee*/
+    color: var(--branco);  /*define a cor do texto da classe*/
+    text-align: center;  /*define o alinahamento do texto da classe*/
+    padding: 2.5em 2em;  /*define o espaçamento interno da classe*/
+
+}
+.banner__titulo{  /*defines os estilos da classe banner__titulo*/
+    font-size: 18px;  /*define o temanho da fonte*/
+    font-weight: 700;  /*define o destaque da fonte*/
+
+}.banner__texto{  /*define os estilos da classe banner_texto*/
+    font-weight: 500;  /*define o destaque da fonte*/
+    margin: 1em 0;  /*define a margem do texto*/
+}
+.banner__pesquisa {  /*define as configurações da barra de pesquisa*/
+    background-color: transparent;  /*faz com que o fundo da barra seja trasparente*/
+    border: 1px solid var(--branco);  /*define as configurações de borda da barra de pesquisa*/
+    color: var(--branco);  /*define o temanho da fonte*/
+    border-radius: 24px;  /*define o tamanho das bordas*/
+    padding: 1em;  /*define o espaçamento interno da classe*/
+    width: 100%;  /*define a largura da barra de pesquisa */
+}
+
+.banner__pesquisa::placeholder {  /*define as configurações do texto que aparece dentro da barra de pesquisa antes de algo ser digitado nela*/
+    font-family: var(--fonte-principal);  /*define o estilo da fonte para a classe*/
+    font-size: 14px;  /*define o temanho da fonte*/
+    font-weight: 400;  /*define o destaque da fonte*/
+    text-align: center;  /*define o alinahamento do texto da classe*/
+    color: var(--branco);  /*define a cor do texto da classe*/
+    background: url("../img/Pesquisa.svg") no-repeat;  /*coloca a lupa na barra de pesquisa*/
+    background-position: 1em;  /*define o espaçamento entre a lupa e a borda*/
+}

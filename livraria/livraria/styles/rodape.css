@@ -1,0 +1,10 @@
+/* Parte 4 */
+
+hr {  /*define os estilos para a tag hr*/
+    margin: 0;  /*define as margens aplicadas para a tag hr*/
+}
+
+.rodapé {  /* define os estilos para a classe rodapé */
+    background-color: var(--branco);  /*define a cor de fundo desta classe*/
+    padding: 1em;  /*define o espaçamento dentro desta classe*/
+}

@@ -1,0 +1,74 @@
+/* Parte 2 e 3*/
+
+.carrossel__titulo{     /*define os estilos da classe carrosel__titulo*/
+    color: var(--laranja);  /*define a cor do texto*/
+    background-color: var(--branco);    /*define a cor do fundo*/
+    text-align: center;  /*define o alinhamento do texto*/
+    text-transform: uppercase;   /*converte o texto para letras maiusculas*/
+    font-size: 18px;    /*define o tamanho do texto*/
+    font-weight: 700;   /*define o destaque do texto*/
+    padding: 1em 0 0.5em 0;  /*define o espaçamento do texto*/
+}
+.swiper-slide img {  /*define os estilos para as tags <img> da classe swiper-slide*/
+    width: 100%;     /*faz com que a largura da imagem utilize 100% do espaço disponivel para ela*/
+}
+.swiper-button-prev,
+.swiper-button-next {  /*define os estilos dos botoes do carrosel*/
+    display: none;  /*faz com que os botoẽs nao apareçam*/
+}
+.swiper-pagination {
+    position: initial; /*faz o posicionamento das bolinhas do carrosel - neste caso faz elas ficarem na parte superior do carrosel*/
+    margin: .5em 0;  /*cria a margem envolta das bolinhas do carrosel*/
+}
+
+.card {  /*defien os estilos aplicados ao cartao de livros que aparece na pagina*/
+    background: var(--branco);  /*define a cor de fundo*/
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  /*define o sombreamento da caixa*/
+    border-radius: 10px;  /*define o tamanho da caixa*/
+    margin: 1em;  /*define a margem*/
+    padding: 1em;  /*define o espaçamento interno entre os intens da caixa e a margem*/
+}
+ 
+.card__descrição {  /*oconfigurações de estilos das descrições dentro do cartao*/
+    display: flex;  /*faz com que os itens fiquem um ao lado do outro em linha*/
+    justify-content: space-between;  /*define como o navegador distribui o espaço entre e ao redor dos itens de conteúdo ao longo do eixo principal de um flex container */
+    margin-bottom: 0.5em;  /*define a margem inferior*/
+
+}
+
+.card__botões {  /*configurações de estilos dos botoes dentro do cartao*/
+    display: flex;  /*faz com que os itens fiquem um ao lado do outro em linha*/
+    justify-content: space-between;  /*define como o navegador distribui o espaço entre e ao redor dos itens de conteúdo ao longo do eixo principal de um flex container */
+}
+
+.botões {  /*configurações de estilos dos botoes dentro do cartao*/  
+    display: flex;  /*faz com que os itens fiquem um ao lado do outro em linha*/
+}
+
+.descrição__titulo {  /*configurações de estilos do titulo dentro do cartao*/
+    color: var(--laranja);  /*define a cor do texto*/
+    font-weight: 700;  /*define o destaque da fonte da classe*/
+}
+
+.descrição__titulo-livro {  /*configurações de estilos do titulo do livro do cartao*/
+    color: var(--azul);  /*define a cor do texto*/
+    font-size: 18px;  /*define o tamanho do texto*/
+    font-weight: 700;  /*define o destaque do texto*/
+    margin: 0.5em 0;  /*define a margem*/
+}
+
+.descrição__texto {  /*configurações de estilos do texto dentro do cartao*/
+    font-size: 14px;  /*define o tamanho do texto*/
+}
+
+.botões__ancora {  /*configurações de estilos do ancora do botao saiba mais dentro do cartao*/
+    background-color: var(--laranja);  /*define a cor do fundo*/
+    padding: 1em 2.2em;  /*define o espaçamento interno entre os intens da caixa e a margem*/
+    color: var(--branco);  /*define a cor do texto*/
+    font-weight: 700;  /*define o destaque do texto*/
+    text-decoration: none;  /*remove as decorações do texto - sobrelinha etc.*/
+}
+
+.botões__item {  /*configurações de estilos do botao saiba mais dentro do cartao*/
+    margin: 0 0.5em;  /*define a margem*/
+}

@@ -1,0 +1,33 @@
+/* Parte 4 */
+
+.tópicos {  /*configurações da classe topicos onde ficao os topicos visitados recentemente*/
+    background: var(--azul-degrade);  /*define a cor de fundo da classee*/
+    text-align: center;  /*define o alinahamento do texto da classe*/
+    padding: 1em 0;  /*define o espaçamento interno da classe*/
+}
+
+.tópicos__titulo {  /*configurações do titulo dentro dos topicos*/
+    color: var(--branco);  /*define a cor do texto da classe*/
+    font-weight: 300;  /*define o destaque da fonte*/
+    margin-bottom: 1em;  /*define a margem inferior*/
+}
+
+.tópicos__lista {  /*configurações da lista de itens de topicos */
+    display: flex;  /*faz com que os itens fiquem um ao lado do outro em linha*/
+    flex-wrap: wrap;  /*define se os itens flexíveis são forçados a ficarem na mesma linha ou se podem ser quebradas em varias linhas. Se o argumento for valido, ele define a direção em que as linhas são empilhadas.*/
+    justify-content: center;  /*define como o navegador distribui o espaço entre e ao redor dos itens de conteúdo ao longo do eixo principal de um contêiner flexível*/
+}
+
+.tópicos__item {  /*configurações dos itens individuais da lista*/
+    margin: 2em 0.5em;  /*define as margens envolta dos itens da lista*/
+}
+
+.tópicos__link {  /*configurações dos links dos topicos*/
+    color: var(--branco);  /*define a cor do texto da classe*/
+    padding: 1em;  /*define o espaçamento interno da classe*/
+    background-color: var(--laranja);  /*define a cor de fundo da classee*/
+    text-decoration: none;  /*remove as decorações do texto - sobrelinha etc.*/
+    font-size: 14px;  /*define o temanho da fonte*/
+    font-weight: 700;  /*define o destaque da fonte*/
+
+}
